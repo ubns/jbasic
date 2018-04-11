@@ -4,11 +4,20 @@ import java.util.Scanner;
 
 public class Sample1_7 {
 	public static void main(String[] args) {
-		System.out.print("なにか入力して：");
+		System.out.println("1~5までの数値を入力してください。");
+		
 		Scanner scan = new Scanner(System.in);
-		String data = scan.next();
+		String str = scan.next();
+		
+		int i = scan.nextInt();
+		
+		int a = i * 10;
+		
+		// 出力
+		System.out.println(str);
+		System.out.println(a);
 		
 		scan.close();
-		System.out.println("あはは " + data);
+		
 	}
 }
